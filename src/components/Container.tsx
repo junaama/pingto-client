@@ -1,5 +1,5 @@
 import { Flex, useColorMode, FlexProps } from '@chakra-ui/react'
-
+import WithSubnavigation from './Nav'
 export const Container = (props: FlexProps) => {
   const { colorMode } = useColorMode()
 
@@ -7,6 +7,8 @@ export const Container = (props: FlexProps) => {
 
   const color = { light: 'black', dark: 'white' }
   return (
+    <>
+    <WithSubnavigation/>
     <Flex
       direction="column"
       alignItems="center"
@@ -15,5 +17,6 @@ export const Container = (props: FlexProps) => {
       color={color[colorMode]}
       {...props}
     />
+    </>
   )
 }
