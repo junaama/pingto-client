@@ -21,7 +21,9 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
+
   import { DarkModeSwitch } from './DarkModeSwitch';
+  
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
   
@@ -55,7 +57,7 @@ import {
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-              Logo
+              PINGTO
             </Text>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -255,11 +257,11 @@ import {
         href: "#"
     },
     {
-      label: 'Learn Design',
+      label: 'Privacy',
       href: '#',
     },
     {
-      label: 'Hire Designers',
+      label: 'Careers',
       href: '#',
     },
   ];

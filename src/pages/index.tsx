@@ -30,6 +30,7 @@ const Index = () => (
 
     <Footer>
       <Text>Build ❤️ Community</Text>
+      
     </Footer>
     <CTA />
   </Container>
